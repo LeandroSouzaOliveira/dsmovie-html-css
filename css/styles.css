@@ -81,17 +81,20 @@ a:hover {
 
 .ds-card-description {
   background-color: var(--white);
-  padding: 10px 0 20px 0;
+  padding: 10px 20px 20px 20px;
   border-radius: 0 0 8px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  min-height: 150px;
 }
 
 .ds-card-description h3 {
   margin-bottom: 25px;
   font-size: 14px;
   font-weight: 700;
+  text-align: center;
 }
 
 .ds-btn,
@@ -106,4 +109,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ds-form-container {
+    padding: 40px 0;
+    max-width: 480px;
 }
