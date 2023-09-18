@@ -2,6 +2,7 @@
 
 :root {
   --bg-gray: #e8e8e8;
+  --text-gray: #4a4a4a;
   --color-primary: #4d41c0;
   --white: #fff;
 }
@@ -62,4 +63,47 @@ a:hover {
 
 .ds-contact-container img {
   margin-right: 10px;
+}
+
+#ds-card-list {
+  padding: 40px 0;
+}
+
+.ds-card {
+  width: 360px;
+  border-radius: 8px 8px 0 0;
+}
+
+.ds-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.ds-card-description {
+  background-color: var(--white);
+  padding: 10px 0 20px 0;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ds-card-description h3 {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ds-btn,
+.ds-btn:hover {
+  width: 180px;
+  height: 40px;
+  background-color: var(--color-primary);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
