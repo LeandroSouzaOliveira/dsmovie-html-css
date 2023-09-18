@@ -3,6 +3,7 @@
 :root {
   --bg-gray: #e8e8e8;
   --text-gray: #4a4a4a;
+  --text-ligth-gray: #aaaaaa;
   --color-primary: #4d41c0;
   --white: #fff;
 }
@@ -109,9 +110,46 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 
 .ds-form-container {
-    padding: 40px 0;
-    max-width: 480px;
+  padding: 40px 0;
+  max-width: 480px;
+}
+
+.ds-form-description {
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.ds-form-description h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.ds-form {
+  width: 100%;
+}
+
+.ds-form-group {
+  margin-bottom: 20px;
+}
+
+.ds-form-group label {
+  font-size: 12px;
+  color: var(--text-ligth-gray);
+}
+
+.ds-form-btn-container {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
