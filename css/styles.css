@@ -6,6 +6,7 @@
   --text-ligth-gray: #aaaaaa;
   --color-primary: #4d41c0;
   --white: #fff;
+  --star-yellow: #ffbb3a;
 }
 
 * {
@@ -88,7 +89,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 150px;
+  height: 220px;
 }
 
 .ds-card-description h3 {
@@ -96,6 +97,29 @@ a:hover {
   font-size: 14px;
   font-weight: 700;
   text-align: center;
+}
+
+.ds-card-description-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ds-card-description-bottom h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--star-yellow);
+}
+
+.ds-card-description-bottom p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-ligth-gray);
+    margin-bottom: 10px;
+  }
+
+.ds-card-description-bottom img {
+  width: 22px;
 }
 
 .ds-btn,
