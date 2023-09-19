@@ -68,7 +68,7 @@ a:hover {
 }
 
 #ds-card-list {
-  padding: 40px 10px;
+  padding: 0 10px;
 }
 
 .ds-card {
@@ -112,11 +112,11 @@ a:hover {
 }
 
 .ds-card-description-bottom p {
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--text-ligth-gray);
-    margin-bottom: 10px;
-  }
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-ligth-gray);
+  margin-bottom: 10px;
+}
 
 .ds-card-description-bottom img {
   width: 22px;
@@ -176,4 +176,52 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.ds-pagination-container {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ds-pagination-box {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ds-pagination-box p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.ds-pagination-box button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ds-pagination-box button img {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(16%) saturate(6966%) hue-rotate(229deg)
+    brightness(95%) contrast(98%);
+}
+
+.ds-pagination-box button:disabled {
+  border: 1px solid var(--text-ligth-gray);
+  background-color: var(--white);
+}
+
+.ds-pagination-box button:disabled img {
+  filter: unset;
+}
+
+.ds-flip-horizontal {
+  transform: rotate(180deg);
 }
